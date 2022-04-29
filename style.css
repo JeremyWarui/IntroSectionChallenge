@@ -40,6 +40,7 @@ body {
   font-size: var(--normal-size);
   font-family: var(--epilogue);
   min-height: 100vh;
+  min-width: 350px;
 
   /* display: flex;
   justify-content: flex-start; */
@@ -179,7 +180,9 @@ div.side-dropdown-menu img {
 /* on hover */
 
 .nav-item #features:focus + .dropdown-menu,
-.nav-item #company:focus + .dropdown-menu {
+.nav-item #features:hover + .dropdown-menu,
+.nav-item #company:focus + .dropdown-menu,
+.nav-item #company:hover + .dropdown-menu {
   visibility: visible;
 }
 
@@ -328,7 +331,7 @@ side navbar
 
 .side-nav-bar {
   min-height: 100vh;
-  width: 180px;
+  width: 280px;
   background-color: #fff;
   z-index: 10;
   position: fixed;
@@ -337,7 +340,7 @@ side navbar
   justify-content: start;
   align-items: flex-start;
   gap: 2rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   transform: translateX(300px);
   transition: ease-in;
 }
@@ -357,11 +360,11 @@ side navbar
 button.close-btn {
   background-color: transparent;
   padding: 5px;
-  margin-left: 6rem;
+  margin-left: 12rem;
 }
 
 .side {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   display: flex;
   flex-direction: column;
 }
@@ -373,12 +376,12 @@ button.close-btn {
 
 /* dropdowns of side bar */
 .side-dropdown-menu {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   margin-top: 0.5rem;
 }
 
 div.side-dropdown-menu .dropdown-item {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 /* 
