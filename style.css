@@ -211,6 +211,9 @@ Main container
   min-height: 200px;
   width: 100%;
 }
+.intro {
+  margin-top: 6rem;
+}
 /* intro section */
 .intro-container {
   flex-basis: 50%;
@@ -229,8 +232,8 @@ Main container
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.6rem;
-    margin: 0.5rem 2rem;
+    gap: 0.2rem;
+    margin: 1rem 2rem;
   }
   /* hero image */
   .hero-image-container {
@@ -240,10 +243,9 @@ Main container
   .intro-container {
     order: 2;
   }
-}
-
-.intro {
-  margin-top: 6rem;
+  .intro {
+    margin-top: 3rem;
+  }
 }
 
 .intro-headline {
@@ -315,7 +317,7 @@ side navbar
 
 .side-nav-bar {
   min-height: 100vh;
-  width: 280px;
+  width: 180px;
   background-color: #fff;
   z-index: 10;
   position: fixed;
@@ -344,7 +346,7 @@ side navbar
 button.close-btn {
   background-color: transparent;
   padding: 5px;
-  margin-left: 13rem;
+  margin-left: 6rem;
 }
 
 .side {
@@ -360,7 +362,7 @@ button.close-btn {
 
 /* dropdowns of side bar */
 .side-dropdown-menu {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   margin-top: 0.5rem;
 }
 
