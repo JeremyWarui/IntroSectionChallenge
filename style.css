@@ -52,7 +52,7 @@ ul {
 
 /* image */
 img {
-  min-height: auto;
+  height: auto;
   width: 100%;
   /* display: block; */
 }
@@ -109,6 +109,13 @@ navigation bar
   flex-basis: 70%;
   margin-left: 1rem;
 }
+/* 
+navbar on mobile view
+*/
+
+.navbar-toggler {
+  display: none;
+}
 
 .nav-item,
 .nav-item a {
@@ -135,6 +142,25 @@ navigation bar
   border: 2px solid var(--almost-black);
 }
 
+/*----------------------------------
+ on mobile view 
+ ---------------------------------*/
+@media screen and (max-width: 600px) {
+  .navbar-expand {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .nav-buttons {
+    display: none;
+  }
+}
+
 /* dropdown menu */
 
 div.dropdown-menu {
@@ -154,7 +180,8 @@ div.features-tab {
   right: 4px;
 }
 
-div.dropdown-menu img {
+div.dropdown-menu img,
+div.side-dropdown-menu img {
   margin-right: 10px;
 }
 
@@ -170,22 +197,49 @@ Main container
 .container {
   display: flex;
   gap: 5rem;
-  flex-basis: 100vw;
+  flex-basis: 100%;
   margin: 3rem 10rem;
 }
 
 /* hero image */
 .hero-image-container {
   flex-basis: 50%;
+  flex-shrink: 1;
   order: 2;
 }
-
+.hero-image img {
+  min-height: 200px;
+  width: 100%;
+}
 /* intro section */
 .intro-container {
   flex-basis: 50%;
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  order: 1;
+}
+
+/*----------------------------------
+ on mobile view 
+ ---------------------------------*/
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0.5rem 2rem;
+  }
+  /* hero image */
+  .hero-image-container {
+    order: 1;
+  }
+  /* intro section */
+  .intro-container {
+    order: 2;
+  }
 }
 
 .intro {
@@ -227,6 +281,27 @@ Main container
   margin-right: 1.8rem;
 }
 
+/*----------------------------------
+ on mobile view 
+ ---------------------------------*/
+@media screen and (max-width: 600px) {
+  .intro {
+    text-align: center;
+  }
+
+  .intro-headline {
+    font-size: 2rem;
+  }
+  .clients {
+    justify-content: center;
+    margin: 3rem 0;
+  }
+  .clients img {
+    width: 70px;
+    margin: auto;
+  }
+}
+
 /*----------------------------------------- 
 side navbar
 -------------------------------------------
@@ -249,12 +324,15 @@ side navbar
   justify-content: start;
   align-items: flex-start;
   gap: 2rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
+  transform: translateX(300px);
+  transition: ease-in;
 }
 
 .overlay {
   z-index: 8;
   background-color: rgba(20, 20, 20, 0.664);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   height: 100vh;
   width: 100vw;
@@ -263,19 +341,31 @@ side navbar
   left: 0;
 }
 
-.close-btn {
+button.close-btn {
   background-color: transparent;
   padding: 5px;
-  align-self: flex-end;
+  margin-left: 13rem;
 }
 
 .side {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .side-nav-btns {
   gap: 1rem;
   align-self: center;
+}
+
+/* dropdowns of side bar */
+.side-dropdown-menu {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+div.side-dropdown-menu .dropdown-item {
+  margin: 15px 0;
 }
 
 /* 
@@ -286,6 +376,10 @@ show and hide the nav and tabs
 
 .show {
   display: block;
+}
+
+.show.side-nav-bar {
+  transform: translateX(0);
 }
 
 .hide {
