@@ -26,3 +26,11 @@ function closeSideNavbar() {
   overlay.classList.add("hide");
   sideNavBar.classList.remove("show");
 }
+
+/* *****************************************************
+hovering over the navbar
+************************************************/
+const dropdownMenus = document.querySelectorAll(".dropdown-menu");
+console.log(dropdownMenus);
+
+//hover event

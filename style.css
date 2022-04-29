@@ -142,25 +142,6 @@ navbar on mobile view
   border: 2px solid var(--almost-black);
 }
 
-/*----------------------------------
- on mobile view 
- ---------------------------------*/
-@media screen and (max-width: 600px) {
-  .navbar-expand {
-    display: flex;
-    justify-content: space-between;
-  }
-  .navbar-collapse {
-    display: none;
-  }
-  .navbar-toggler {
-    display: block;
-  }
-  .nav-buttons {
-    display: none;
-  }
-}
-
 /* dropdown menu */
 
 div.dropdown-menu {
@@ -179,6 +160,10 @@ div.dropdown-menu {
 div.features-tab {
   right: 4px;
 }
+div.features-tab,
+div.company-tab {
+  visibility: hidden;
+}
 
 div.dropdown-menu img,
 div.side-dropdown-menu img {
@@ -189,6 +174,32 @@ div.side-dropdown-menu img {
   display: flex;
   align-items: center;
   margin: 8px 0;
+}
+
+/* on hover */
+
+.nav-item #features:focus + .dropdown-menu,
+.nav-item #company:focus + .dropdown-menu {
+  visibility: visible;
+}
+
+/*----------------------------------
+ on mobile view 
+ ---------------------------------*/
+@media screen and (max-width: 600px) {
+  .navbar-expand {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .nav-buttons {
+    display: none;
+  }
 }
 
 /* ----------------------------------------------
