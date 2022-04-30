@@ -371,8 +371,10 @@ button.close-btn {
 }
 
 .side-nav-btns {
+  margin-top: 10px;
   gap: 1rem;
   align-self: center;
+  color: var(--almost-black);
 }
 
 /* dropdowns of side bar */
