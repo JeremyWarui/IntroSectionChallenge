@@ -343,7 +343,7 @@ side navbar
   gap: 2rem;
   padding: 1rem 2rem;
   transform: translateX(300px);
-  transition: ease-in;
+  transition: transform 0.5s ease-out;
 }
 
 .overlay {
