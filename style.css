@@ -41,9 +41,6 @@ body {
   font-family: var(--epilogue);
   min-height: 100vh;
   min-width: 350px;
-
-  /* display: flex;
-  justify-content: flex-start; */
 }
 
 /* lists */
@@ -193,6 +190,10 @@ div.side-dropdown-menu img {
   .navbar-expand {
     display: flex;
     justify-content: space-between;
+    padding: 1rem 0.3rem;
+  }
+  .nav-brand {
+    margin-left: 15px;
   }
   .navbar-collapse {
     display: none;
