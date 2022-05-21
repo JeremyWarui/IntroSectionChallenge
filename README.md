@@ -29,12 +29,10 @@ I was able to:
 
 ![screenshot](./images/screenshot.jpg)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/JeremyWarui/IntroSectionChallenge)
-- Live Site URL: [Add live site URL here](https://intro-section-challenge.vercel.app/)
+- Solution URL: [github](https://github.com/JeremyWarui/IntroSectionChallenge)
+- Live Site URL: [vercel](https://intro-section-challenge.vercel.app/)
 
 ## My process
 
