@@ -14,7 +14,6 @@
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="style.css" />
     <style>
       .attribution {
@@ -28,7 +27,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar-expand">
+    <nav class="navbar-expand" role="navigation">
       <!-- nav brand -->
       <a class="nav-brand" href="#">
         <img class="logo" src="images/logo.svg" alt="logo for snap" />
@@ -55,13 +54,12 @@
       <div id="navbar-nav" class="navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a id="features" href="#">
+            <a id="features" href="#" role="button">
               Features
               <img
                 class="icon"
                 src="images/icon-arrow-down.svg"
                 alt="arrow icon"
-                role="button"
               />
             </a>
             <div class="dropdown-menu features-tab">
@@ -96,13 +94,12 @@
             </div>
           </li>
           <li class="nav-item">
-            <a id="company" href="#">
+            <a id="company" href="#" role="button">
               Company
               <img
                 class="icon"
                 src="images/icon-arrow-down.svg"
                 alt="arrow down icon"
-                role="button"
             /></a>
 
             <div class="dropdown-menu company-tab">
@@ -117,7 +114,7 @@
       </div>
 
       <!-- side nav-bar -->
-      <div id="sideNavbar" class="slide side-nav-bar">
+      <div id="sideNavbar" class="side-nav-bar" role="navigation">
         <button class="close-btn" type="button">
           <img
             class="icon"
@@ -127,13 +124,12 @@
         </button>
         <ul>
           <li class="side nav-item">
-            <a id="side-features" href="#" class="sideTab">
+            <a id="side-features" href="#" class="sideTab" role="button">
               Features
               <img
                 class="icon"
                 src="images/icon-arrow-down.svg"
                 alt="arrow icon"
-                role="button"
               />
             </a>
             <div class="side-dropdown-menu hide">
@@ -168,13 +164,12 @@
             </div>
           </li>
           <li class="side nav-item">
-            <a id="side-company" href="#" class="sideTab">
+            <a id="side-company" href="#" class="sideTab" role="button">
               Company
               <img
                 class="icon"
                 src="images/icon-arrow-down.svg"
                 alt="arrow down icon"
-                role="button"
             /></a>
 
             <div class="side-dropdown-menu hide">
@@ -203,7 +198,7 @@
     </nav>
 
     <!-- container -->
-    <div class="container">
+    <main class="container" role="main">
       <div class="hero-image-container">
         <img
           class="hero-image"
@@ -233,15 +228,15 @@
           <img src="images/client-maker.svg" alt="maker logo" />
         </div>
       </div>
-    </div>
+    </main>
 
-    <div class="attribution">
+    <footer class="attribution" role="contentinfo">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by
       <a href="https://www.frontendmentor.io/profile/JeremyWarui">Jeremy</a>.
-    </div>
+    </footer>
 
     <!-- scripts -->
     <script src="script.js"></script>
